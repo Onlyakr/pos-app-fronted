@@ -36,7 +36,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
           <LoginForm setIsUser={setIsUser} />
         ) : (
           <>
-            <AppSidebar />
+            <AppSidebar setIsUser={setIsUser} />
             <main className="flex flex-1 flex-col p-2 pl-0">
               <AppHeader />
               <div className="bg-card border-border flex max-h-[973px] flex-1 items-center justify-center rounded-lg border p-2">

@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
 const HomePage = () => {
-  redirect("/sales");
+  redirect("/products");
 };
 export default HomePage;

@@ -20,7 +20,11 @@ import { Button } from "@/components/ui/button";
 
 // const user = users[0];
 
-const AppSidebar = () => {
+const AppSidebar = ({
+  setIsUser,
+}: {
+  setIsUser: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
   const [cashier, setCashier] = useState(true);
 
   return (
@@ -28,7 +32,7 @@ const AppSidebar = () => {
       <SidebarHeader className="relative my-3 items-center gap-2">
         <Logo />
         <SidebarTrigger className="absolute top-0 right-2" />
-        <Role />
+        <Role cashier={cashier} />
       </SidebarHeader>
 
       <SidebarSeparator />
@@ -41,6 +45,9 @@ const AppSidebar = () => {
         </SidebarGroup>
       </SidebarContent>
       <SidebarFooter>
+        <Button variant="destructive" onClick={() => setIsUser((crr) => !crr)}>
+          Logout
+        </Button>
         <Button variant="destructive" onClick={() => setCashier((crr) => !crr)}>
           Change Role
         </Button>

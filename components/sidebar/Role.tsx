@@ -2,10 +2,10 @@ import { users } from "@/utils/data";
 
 const user = users[1];
 
-const Role = () => {
+const Role = ({ cashier }: { cashier: boolean }) => {
   return (
     <span className="text-muted-foreground text-sm">
-      {user.name} - {user.role}
+      {user.name} - {cashier === true ? user.role : "manager"}
     </span>
   );
 };
