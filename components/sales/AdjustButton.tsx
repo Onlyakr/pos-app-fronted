@@ -1,7 +1,7 @@
 import { Button } from "../ui/button";
 import { Minus, Plus } from "lucide-react";
 
-const AdjustButton = ({ product }: { product: Product }) => {
+const AdjustButton = () => {
   //   const [products, setProducts] = useState<Product[]>(productsData);
 
   //   const handleAdd = (productID: string) => {
