@@ -11,7 +11,11 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Logo from "@/components/Logo";
 
-export function LoginForm({ setIsUser }: { setIsUser: React.ReactElement }) {
+export function LoginForm({
+  setIsUser,
+}: {
+  setIsUser: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center">
       <Logo className="mb-5 flex-row" />
