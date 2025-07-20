@@ -9,7 +9,7 @@ import AppHeader from "@/components/header/AppHeader";
 import { useState } from "react";
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
-  const [isUser, setIsUser] = useState<boolean>(false);
+  const [isUser, setIsUser] = useState(false);
   // const user = users[0];
   return (
     <ThemeProvider
