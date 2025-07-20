@@ -17,7 +17,7 @@ const CartList = () => {
           </li>
           <li className="flex items-center justify-center">{product.price}</li>
           <li className="flex items-center justify-center gap-2">
-            <AdjustButton product={product} />
+            <AdjustButton />
           </li>
         </ul>
       ))}
