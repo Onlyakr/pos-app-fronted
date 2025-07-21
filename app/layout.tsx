@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${dmSans.variable} bg-background text-foreground antialiased`}
+        className={`${dmSans.variable} bg-background text-foreground overflow-hidden antialiased`}
       >
         <Providers>{children}</Providers>
       </body>

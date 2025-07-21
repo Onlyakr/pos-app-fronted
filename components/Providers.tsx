@@ -39,7 +39,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
             <AppSidebar setIsUser={setIsUser} />
             <main className="flex flex-1 flex-col p-2 pl-0">
               <AppHeader />
-              <div className="bg-card border-border flex flex-1 items-center justify-center rounded-lg border p-2">
+              <div className="bg-card border-border flex max-w-full flex-1 items-center justify-center rounded-lg border p-2">
                 {children}
               </div>
             </main>
